@@ -8,7 +8,8 @@ vet: fmt
 	go vet ./...
 
 build: vet
-	go build part_one.go
+	go build p1/part_one.go 
+	go build p2/part_two.go 
 
 clean:
 	@rm part_one part_two 2>/dev/null || true
