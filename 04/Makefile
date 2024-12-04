@@ -9,6 +9,7 @@ vet: fmt
 
 build: vet
 	go build -gcflags "-N" p1/part_one.go 
+	go build -gcflags "-N" p2/part_two.go 
 
 clean:
 	@rm part_one part_two 2>/dev/null || true
